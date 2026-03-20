@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 const express = require('express')
 
 const app = express()
@@ -16,6 +16,6 @@ app.get('/img', (req, res) => {
     res.send('<img src="https://hblimg.mmtcdn.com/content/hubble/img/img/mmt/activities/m_Mahakaleshwar_jyotirlinga_ujjain_img1_p_1090_818.jpg" alt="My Photo">')
 })
 
-app.listen(process.env, () => {
+app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
